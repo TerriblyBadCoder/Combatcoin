@@ -80,6 +80,11 @@ public class CombatCoin
         {
             event.accept(BlockRegistry.BLOCK_OF_NEJELEZO);
         }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ItemRegistry.NEJELEZO_INGOT);
+            event.accept(ItemRegistry.NEJELEZO_UPGRADE_SMITHING_TEMPLATE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
