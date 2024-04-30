@@ -1,0 +1,3 @@
+// 1.20.1	2024-04-30T20:04:12.2282802	Global Loot Modifiers : coinmod
+0a15355879c20de39f23cce74e63b11ca8f037b9 data/coinmod/loot_modifiers/nejelezo_template_from_chest.json
+deb6250bc37739f4793937cfe4942837a35ad88b data/forge/loot_modifiers/global_loot_modifiers.json

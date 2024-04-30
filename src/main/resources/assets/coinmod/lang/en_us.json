@@ -1,0 +1,19 @@
+{
+  "item.coinmod.coin": "Golden Coin",
+  "item.coinmod.blockbuster": "Blockbuster",
+  "item.coinmod.nejelezo_ingot": "Nejelezo ingot",
+  "item.coinmod.chainedsaw": "Chained Saw",
+  "item.coinmod.nejelezo_upgrade_smithing_template": "Nejelezo Upgrade Template",
+  "block.coinmod.block_of_nejelezo": "Block of Nejelezo ",
+
+  "enchantment.coinmod.grapeshot": "Grapeshot",
+  "enchantment.coinmod.overheat": "Overheat",
+  "enchantment.coinmod.firedworks": "FiredWorks",
+  "enchantment.coinmod.recoil": "Recoil",
+  "enchantment.coinmod.snowballing": "Snowballing",
+  "upgrade.coinmod.nejelezo_upgrade": "Nejelezo upgrade",
+  "item.coinmod.smithing_template.nejelezo_upgrade.additions_slot_description": "Add nejelezo ingot",
+  "item.coinmod.smithing_template.nejelezo_upgrade.applies_to": "Diamond Sword, Dispencer",
+  "item.coinmod.smithing_template.nejelezo_upgrade.base_slot_description": "Add diamond sword or dispencer",
+  "item.coinmod.smithing_template.nejelezo_upgrade.ingredients": "Nejelezo Ingot"
+}

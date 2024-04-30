@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "key": {
+    "&": {
+      "item": "minecraft:gold_ingot"
+    },
+    "#": {
+      "item": "minecraft:gold_nugget"
+    }
+
+  },
+  "pattern": [
+
+    " # ",
+    "#&#",
+    " # "
+
+  ],
+  "result": {
+    "item": "coinmod:coin"
+  },
+  "show_notification": true
+}

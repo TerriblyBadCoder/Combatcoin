@@ -1,0 +1,19 @@
+{
+  "variants": {
+      "coinmod_heat=0": {
+        "model": "coinmod:block/block_of_nejelezo_stage1"
+      },
+    "coinmod_heat=1": {
+      "model": "coinmod:block/block_of_nejelezo_stage2"
+    },
+    "coinmod_heat=2": {
+      "model": "coinmod:block/block_of_nejelezo_stage3"
+    },
+    "coinmod_heat=3": {
+      "model": "coinmod:block/block_of_nejelezo_stage4"
+    },
+    "coinmod_heat=4": {
+      "model": "coinmod:block/block_of_nejelezo_stage5"
+    }
+  }
+}

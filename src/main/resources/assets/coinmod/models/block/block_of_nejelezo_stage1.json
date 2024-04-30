@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "coinmod:block/block_of_nejelezo_1"
+  }
+}
