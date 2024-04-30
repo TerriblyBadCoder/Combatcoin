@@ -13,7 +13,7 @@
   "enchantment.coinmod.snowballing": "Snowballing",
   "upgrade.coinmod.nejelezo_upgrade": "Nejelezo upgrade",
   "item.coinmod.smithing_template.nejelezo_upgrade.additions_slot_description": "Add nejelezo ingot",
-  "item.coinmod.smithing_template.nejelezo_upgrade.applies_to": "Diamond Sword, Dispencer",
-  "item.coinmod.smithing_template.nejelezo_upgrade.base_slot_description": "Add diamond sword or dispencer",
+  "item.coinmod.smithing_template.nejelezo_upgrade.applies_to": "Diamond Sword, Dispenser",
+  "item.coinmod.smithing_template.nejelezo_upgrade.base_slot_description": "Add diamond sword or dispenser",
   "item.coinmod.smithing_template.nejelezo_upgrade.ingredients": "Nejelezo Ingot"
 }

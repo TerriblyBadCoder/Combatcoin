@@ -58,7 +58,7 @@ public class ChainedSawItem extends SwordItem {
         int charge = ((CompoundTag)pStack.serializeNBT().get("tag")).getInt("coinmod_heatpower");
         CompoundTag compound = new CompoundTag();
 
-    System.out.println(" " + ((Player)pAttacker).getAttackStrengthScale(0.1F));
+
         compound.putInt("coinmod_heatpower",Mth.clamp(charge,0,100)+(int)(20*Math.pow(((Player)pAttacker).getAttackStrengthScale(0.1F),2)));
         pStack.addTagElement("coinmod_heatpower",compound.get("coinmod_heatpower"));
         return super.hurtEnemy(pStack, pTarget, pAttacker);
@@ -75,7 +75,7 @@ public class ChainedSawItem extends SwordItem {
         CompoundTag compound = new CompoundTag();
         compound.putInt("coinmod_heatcharge", Mth.clamp(pStack.getUseDuration()-pTimeCharged,0,25));
         pStack.addTagElement("coinmod_heatcharge",compound.get("coinmod_heatcharge"));
-        System.out.println(compound);
+
         pLivingEntity.swing(pLivingEntity.getUsedItemHand());
     }
     @Override
@@ -119,7 +119,7 @@ public class ChainedSawItem extends SwordItem {
         List<Entity> list = pLevel.getEntities(pEntity, hitBox);
         CompoundTag compound = new CompoundTag();
         boolean heated = false;
-        System.out.println(pSlotId);
+
         if((pIsSelected||pSlotId==0) && charge>0)
         {
             if(heat > 40)

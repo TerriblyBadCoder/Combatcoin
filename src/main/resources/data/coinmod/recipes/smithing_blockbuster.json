@@ -4,7 +4,7 @@
     "item": "coinmod:nejelezo_ingot"
   },
   "base": {
-    "item": "minecraft:dispencer"
+    "item": "minecraft:dispenser"
   },
   "result": {
     "item": "coinmod:blockbuster"

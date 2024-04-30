@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "key": {
+    "&": {
+      "item": "coinmod:nejelezo_ingot"
+    }
+
+  },
+  "pattern": [
+
+    "&&&",
+    "&&&",
+    "&&&"
+
+  ],
+  "result": {
+    "item": "coinmod:block_of_nejelezo"
+  },
+  "show_notification": true
+}

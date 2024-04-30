@@ -9,6 +9,7 @@ import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.SmithingTableBlock;
 
 import java.util.function.Function;
 
@@ -23,6 +24,7 @@ public class CoinItem extends Item {
         this.throwSpeed = throwSpeed;
         this.throwRandomness = throwRandomness;
         this.projectileSupplier = projectileSupplier;
+
     }
 
     @Override

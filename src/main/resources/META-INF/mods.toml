@@ -39,7 +39,7 @@ authors="AtiredGuy" #optional
 #displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''The uttermost description \n ever'''
+description='''Adds various combat things, like nejelezo and it's items (chugun but magic) \n and the Titular Combat Coin \n just like in Ultrakill'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.${mod_id}]] #optional
     # the modid of the dependency

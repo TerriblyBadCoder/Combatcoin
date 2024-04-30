@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "coinmod:block_of_nejelezo"
+    }
+
+  ],
+  "result": {
+    "count": 9,
+    "item": "coinmod:nejelezo_ingot"
+
+  }
+
+}
