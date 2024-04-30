@@ -1,6 +1,7 @@
 package net.atired.coinmod.Items.custom;
 
 import com.google.common.collect.ImmutableSet;
+import net.atired.coinmod.Items.ItemRegistry;
 import net.atired.coinmod.enchantments.EnchantmentRegistry;
 import net.atired.coinmod.entity.projectile.BustedEntity;
 import net.minecraft.core.BlockPos;
@@ -43,6 +44,9 @@ public class BlockBusterItem extends Item implements Vanishable {
     @Override
     public UseAnim getUseAnimation(ItemStack pStack) {
         return UseAnim.BOW;
+    }
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ItemRegistry.NEJELEZO_INGOT.get());
     }
     public int getEnchantmentValue() {
         return 1;

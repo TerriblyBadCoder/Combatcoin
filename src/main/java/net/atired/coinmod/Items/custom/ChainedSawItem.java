@@ -3,6 +3,7 @@ package net.atired.coinmod.Items.custom;
 import ca.weblite.objc.Client;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import net.atired.coinmod.Items.ItemRegistry;
 import net.atired.coinmod.enchantments.EnchantmentRegistry;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.entity.ItemRenderer;
@@ -107,7 +108,9 @@ public class ChainedSawItem extends SwordItem {
             }
         });
     }
-
+    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+        return pRepair.is(ItemRegistry.NEJELEZO_INGOT.get());
+    }
 
 
     @Override
