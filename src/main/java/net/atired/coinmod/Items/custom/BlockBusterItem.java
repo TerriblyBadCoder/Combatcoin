@@ -70,8 +70,7 @@ public class BlockBusterItem extends Item implements Vanishable {
                    Vec3 vec3recoil = pLivingEntity.getDeltaMovement().scale(pLivingEntity.getItemInHand(pLivingEntity.getUsedItemHand()).getEnchantmentLevel(EnchantmentRegistry.RECOIL.get()));
                    pLivingEntity.addDeltaMovement(vec3recoil.scale(-1));
                    pLivingEntity.addDeltaMovement(pLivingEntity.getViewVector(0).scale(-0.5).scale(pLivingEntity.getItemInHand(pLivingEntity.getUsedItemHand()).getEnchantmentLevel(EnchantmentRegistry.RECOIL.get())));
-                    if(!player.getAbilities().instabuild)
-                        blockItem.setCount(blockItem.getCount()-1);
+
                 pLevel.playSound(player,BlockPos.containing(player.getEyePosition().x,player.getEyePosition().y,player.getEyePosition().z), SoundEvents.CROSSBOW_SHOOT, SoundSource.PLAYERS,1,0.55F);
                 if(pLevel instanceof ServerLevel serverLevel) {
                     float inaccuracy = 0.005F;
@@ -106,6 +105,8 @@ public class BlockBusterItem extends Item implements Vanishable {
                     for(int i = 0; i < 6; i++)
                         pLevel.addParticle(ParticleTypes.SMOKE,vec3.x+(Math.random()-0.5)/3,vec3.y+(Math.random()-0.5)/3,vec3.z+(Math.random()-0.5)/3,eyeVec3.x+(Math.random()-0.5)/2,eyeVec3.y+(Math.random()-0.5)/2,eyeVec3.z+(Math.random()-0.5)/2);
                 }
+                   if(!player.getAbilities().instabuild)
+                       blockItem.setCount(blockItem.getCount()-1);
             }
 
         }
