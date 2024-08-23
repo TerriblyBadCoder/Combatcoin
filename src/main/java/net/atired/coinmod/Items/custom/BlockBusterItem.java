@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableSet;
 import net.atired.coinmod.Items.ItemRegistry;
 import net.atired.coinmod.enchantments.EnchantmentRegistry;
 import net.atired.coinmod.entity.projectile.BustedEntity;
+import net.minecraft.client.renderer.blockentity.TheEndPortalRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Position;
 import net.minecraft.core.particles.ParticleTypes;
@@ -67,8 +68,8 @@ public class BlockBusterItem extends Item implements Vanishable {
                 hand = InteractionHand.OFF_HAND;
                if(pLivingEntity.getItemInHand(hand).getItem() instanceof  BlockItem){
                    ItemStack blockItem = pLivingEntity.getItemInHand(hand);
-                   Vec3 vec3recoil = pLivingEntity.getDeltaMovement().scale(pLivingEntity.getItemInHand(pLivingEntity.getUsedItemHand()).getEnchantmentLevel(EnchantmentRegistry.RECOIL.get()));
-                   pLivingEntity.addDeltaMovement(vec3recoil.scale(-1));
+                   Vec3 vec3recoil = pLivingEntity.getViewVector(0).scale(pLivingEntity.getItemInHand(pLivingEntity.getUsedItemHand()).getEnchantmentLevel(EnchantmentRegistry.RECOIL.get())*pLivingEntity.getDeltaMovement().length());
+                   pLivingEntity.addDeltaMovement(vec3recoil.scale(-0.8));
                    pLivingEntity.addDeltaMovement(pLivingEntity.getViewVector(0).scale(-0.5).scale(pLivingEntity.getItemInHand(pLivingEntity.getUsedItemHand()).getEnchantmentLevel(EnchantmentRegistry.RECOIL.get())));
 
                 pLevel.playSound(player,BlockPos.containing(player.getEyePosition().x,player.getEyePosition().y,player.getEyePosition().z), SoundEvents.CROSSBOW_SHOOT, SoundSource.PLAYERS,1,0.55F);
@@ -85,7 +86,6 @@ public class BlockBusterItem extends Item implements Vanishable {
                     }
                     for(int i = 0; i < u; i++)
                     {
-
 
                         Vec3 vec31 = player.getUpVector(1.0F);
                         Quaternionf quaternionf = (new Quaternionf()).setAngleAxis((double)(-(u-i-2)*off * 0.017453292F), vec31.x, vec31.y, vec31.z);

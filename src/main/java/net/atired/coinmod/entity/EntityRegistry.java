@@ -14,8 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class EntityRegistry {
     public static final DeferredRegister<EntityType<?>> DEF_REG
             = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CombatCoin.MODID);
-    public static final RegistryObject<EntityType<CoinEntity>> COIN = DEF_REG.register("coin", () -> (EntityType)
-            EntityType.Builder.of(CoinEntity::new, MobCategory.MISC).sized(0.7F, 0.7F).setCustomClientFactory(CoinEntity::new).setUpdateInterval(1).setShouldReceiveVelocityUpdates(true).build("coin"));
+    public static final RegistryObject<EntityType<CoinEntity>> COIN = DEF_REG.register("coin", () -> (EntityType) EntityType.Builder.of(CoinEntity::new, MobCategory.MISC).sized(0.7F, 0.7F).setCustomClientFactory(CoinEntity::new).setUpdateInterval(1).setShouldReceiveVelocityUpdates(true).build("coin"));
     public static final RegistryObject<EntityType<BustedEntity>> BUSTED = DEF_REG.register("busted", () -> (EntityType)
             EntityType.Builder.of(BustedEntity::new, MobCategory.MISC).sized(0.5F, 0.5F).setShouldReceiveVelocityUpdates(true).build("busted"));
 }

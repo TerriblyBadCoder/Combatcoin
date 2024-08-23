@@ -42,7 +42,6 @@ public class CombatCoin
 
     public CombatCoin()
     {
-
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ItemRegistry.register(modEventBus);
         BlockRegistry.register(modEventBus);
